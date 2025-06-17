@@ -1,6 +1,6 @@
-NOME,IDADE,ESTADO CIVIL,CIDADE,FIANLIDADE,TELEFONE,EMAIL
+NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL
 119
-Lucas Andrade Ribeiro,35,Casado,Curitiba,Morar,(41) 98765-4321,lucas.ribeiro@gmail.com
+Lucas Andrade Ribeiro,35,Casado,Barbacena,Morar,(41) 98765-4321,lucas.ribeiro@gmail.com
 Fernanda Costa Lemos,28,Solteira,Porto Alegre,Investir,(51) 99832-1234,fernanda.lemos@outlook.com
 Thiago Almeida Sousa,42,Divorciado,Belo Horizonte,Montar um Negocio,(31) 98523-4567,thiago.sousa@yahoo.com
 Amanda Rocha Ferreira,30,Casada,Recife,Morar,(81) 99976-5432,amanda.ferreira@hotmail.com
@@ -117,5 +117,5 @@ Cassio Martins Goulart,60,Solteiro,Carrancas,Investir,(35) 97878-4435,cassio.mar
 Vinicius Vieira Borges,23,Solteiro,Rio de Janeiro,Investir,(21) 97362-5721,vinicius.borges@gmail.com
 Vilma Pereira Guimaraes,73,Divorciada,Montes Claros,Morar,(35) 94332-5636,vilma.pereira@outlook.com
 Marcos Antonio Freitas,32,Divorciado,Luminarias,Morar,(35) 98373-5258,marcos.freitas@yahoo.com
-Juan Villaba Casterito,46,Solteiro,Foz do Iguaçu,Investir,(45) 97253-3173,juan.villaba@hotmail.com
-Bruno Vilela Gomes,39,Casado,Carrancas,Montar um Negocio,(35) 98136-3178,bruno.gomes@gmail.com
+Bruno Vilela Gomes,40,Casado,Carrancas,Montar um Negocio,(35) 98136-3178,bruno.gomes@gmail.com
+Claudio Balbino Alfaggi,79,Viuvo,Nova Lima,Investir,(31) 74827-4294,acessoria.alfaggi@icloud.com
