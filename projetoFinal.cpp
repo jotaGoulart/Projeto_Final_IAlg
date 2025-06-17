@@ -198,6 +198,8 @@ void inserirCliente() {
 
     int numRegistros=0;
     ifstream lerArquivo("dados.csv");
+    char linhaCabecalho[500];
+    lerArquivo.getline(linhaCabecalho, 500);
     lerArquivo >> numRegistros;
     lerArquivo.ignore();
     
@@ -218,6 +220,7 @@ void inserirCliente() {
     numRegistros++;
 
     ofstream arquivoCSV("dados.csv");
+    arquivoCSV << "NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL" << endl;
     arquivoCSV << numRegistros << endl;
     for (int i=0; i < numLinhas; i++){
         arquivoCSV << linhas[i] << endl;
@@ -341,8 +344,8 @@ void editarDados(){
     }
     
     ofstream arquivoCSV("dados.csv");
+    arquivoCSV << "NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL" << endl;
     arquivoCSV << numRegistros << endl;
-    
     for (int i = 0; i < numRegistros; i++) {
         arquivoCSV << dadosBD[i].nome << "," 
                    << dadosBD[i].idade << "," 
@@ -415,8 +418,8 @@ void excluirDados() {
     numRegistros--;
 
     ofstream arquivoCSV("dados.csv");
+    arquivoCSV << "NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL" << endl;
     arquivoCSV << numRegistros << endl;
-    
     for (int i=0; i < numRegistros; i++) {
         arquivoCSV << dadosBD[i].nome << "," 
                    << dadosBD[i].idade << "," 
@@ -457,18 +460,48 @@ void menuSimples() {
 }
 
 void todosOsDados() {
+    bool continuarNaSecao = true;
     int tamanho, capacidade;
     bd* dadosBD = captarDados(tamanho, capacidade);
-    
-    if (dadosBD == nullptr){
-        return;
-    }
-    
     imprimirTodosDados(dadosBD, tamanho);
-    cout << "----------------------------------------------------------------" << endl;
-	cout << "---------- QUAL ACAO DESEJA REALIZAR AGORA CORRETOR? -----------" << endl;
-    cout << "----------------------------------------------------------------" << endl << endl;
-    menuSimples();
+    
+    while(continuarNaSecao) {
+        
+        if (dadosBD == nullptr){
+            return;
+        }
+        
+        cout << "----------------------------------------------------------------" << endl;
+        cout << "---------- QUAL ACAO DESEJA REALIZAR AGORA CORRETOR? -----------" << endl;
+        cout << "----------------------------------------------------------------" << endl << endl;
+        menuSimples();
+        int acaoSimples;
+        cin >> acaoSimples;
+        cin.ignore();
+        
+        switch(acaoSimples){
+            case 1:
+                editarDados();
+            break;
+                
+            case 2:
+                inserirCliente();
+            break;
+                
+            case 3:
+                excluirDados();
+            break;
+                
+            case 4: 
+                cout << endl << "RETORNANDO AO MENU PRINCIPAL..." << endl;
+                continuarNaSecao = false;
+            break;
+                
+            default:
+                cout << endl << "OPCAO INVALIDA! TENTE NOVAMENTE." << endl << endl;
+            break;
+        }
+    }
     delete[] dadosBD;
 }
 
@@ -517,30 +550,12 @@ int main() {
         int acaoPrincipal, acaoSimples;
         cin >> acaoPrincipal;
         cin.ignore();
+        
         switch(acaoPrincipal) {
             case 1:
                 cout << endl << "--------- AQUI ESTAO OS DADOS DE TODOS SEUS CLIENTES! ----------" << endl;
                 cout << "----------------------------------------------------------------" << endl << endl;
                 todosOsDados();
-                cin >> acaoSimples;
-                cin.ignore();
-                
-                switch(acaoSimples) {
-                    case 1:
-                        editarDados();
-                    break;
-                    case 2:
-                        inserirCliente();
-                    break;
-                    case 3:
-                	    excluirDados();
-                    break;
-                    case 4: // no caso, o case 4 retorna diretamente ao inicio do while, onde é o Menu Principal.
-                    break;
-                    default:
-                        cout << endl << "OPCAO INVALIDA! TENTE NOVAMENTE."<< endl << endl;
-                    break;
-                }
             break;
                 
             case 2:
