@@ -143,9 +143,9 @@ int visualizarESelecionarCliente(int* acao) {
     for (int i = inicioListagem; i <= fimListagem; i++) {
         // esse if é apenas para manter a formatação da interface, pois, acima de 3 digitos, os '=', saem do alinhamento.
 		if(i < 99) {
-            cout << "CLIENTE " << i + 1 << ": =====================================================================" << endl;
-        } else {
             cout << "CLIENTE " << i + 1 << ": ====================================================================" << endl;
+        } else {
+            cout << "CLIENTE " << i + 1 << ": ===================================================================" << endl;
         }
         dadosBD[i].imprime();
     }
@@ -457,10 +457,10 @@ void excluirDados() {
 void imprimirTodosDados(bd* dadosBD, int tamanho) {
     for (int i=0; i < tamanho; i++) {
         if(i < 99) {
-            cout << "CLIENTE " << i + 1 << ": =====================================================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ====================================================================" << endl;
             dadosBD[i].imprime();
         } else {
-            cout << "CLIENTE " << i + 1 << ": ====================================================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ===================================================================" << endl;
             dadosBD[i].imprime();
         }
     }
