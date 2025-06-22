@@ -217,7 +217,9 @@ void lerTelefoneComValidacao(char* telefone) {
 bd* captarDados(int& tamanho, int& capacidade) {
     ifstream arquivoCSV("dados.csv");
     if (!arquivoCSV){
-        cout << endl << "ERRO: NAO FOI POSSIVEL ABRIR O ARQUIVO, SERA REDIRECIONADO AO MENU PRINCIPAL." << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------- ARQUIVO NAO ENCONTRADO, REVISE A FORMATACAO DO MESMO. ------------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
     return nullptr;
     }
 
@@ -270,7 +272,9 @@ int visualizarESelecionarCliente(int* acao) {
     bd* dadosBD = captarDados(numRegistros, capacidade);
     
     if (dadosBD== nullptr || numRegistros== 0) {
-        cout << "NENHUM CLIENTE ENCONTRADO!" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << "--------- NENHUM CLIENTE ENCONTRADO, POSSIVEL ERRO PRESENTE NO ARQUIVO! --------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
         return -1;
     }
     
@@ -300,36 +304,40 @@ int visualizarESelecionarCliente(int* acao) {
         if (posicaoInicial < 1 || posicaoInicial > numRegistros || 
             posicaoFinal < 1 || posicaoFinal > numRegistros || 
             posicaoInicial > posicaoFinal) {
-            cout << endl << "INTERVALO INVALIDO!" << endl;
+                cout << "--------------------------------------------------------------------------------" << endl;
+                cout << "------------ ! ! ! !  INTERVALO INVALIDO! TENTE NOVAMENTE. ! ! ! ! -------------" << endl;
+                cout << "--------------------------------------------------------------------------------" << endl << endl;
             delete[] dadosBD;
             return -1;
         }
         inicioListagem= posicaoInicial-1;
         fimListagem= posicaoFinal-1;
     } else if (opcaoVisualizacao != 1) {
-        cout << endl << "OPCAO INVALIDA!" << endl;
+        cout << endl << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------------ EXCLUSÃO CANCELADA (Retornando ao menu...) ------------------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
         delete[] dadosBD;
         return -1;
     }
     
     if(*acao ==1) {
-		cout << endl << "-----------------------> LISTA DE CLIENTES PARA EDITAR <------------------------" << endl;
+		cout << endl << "----------------------> LISTA DE CLIENTES PARA EDITAR <-------------------------" << endl;
 	} else if (*acao ==2) {
-		cout << endl << "-----------------------> LISTA DE CLIENTES PARA EXCLUIR <-----------------------" << endl;
+		cout << endl << "----------------------> LISTA DE CLIENTES PARA EXCLUIR <------------------------" << endl;
 	}
     cout << "--------------------------------------------------------------------------------" << endl;
 
     for (int i = inicioListagem; i <= fimListagem; i++) {
         // esse if é apenas para manter a formatação da interface, pois, acima de 3 digitos, os '=', saem do alinhamento.
 		if(i < 99) {
-            cout << "CLIENTE " << i + 1 << ": =========================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ====================================================================" << endl;
         } else {
-            cout << "CLIENTE " << i + 1 << ": ========================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ===================================================================" << endl;
         }
         dadosBD[i].imprime();
     }
     
-    cout << "--------------------------------------------------------------------------------" << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
     if (*acao ==1) {
 		cout << endl << "DIGITE O NUMERO DO CLIENTE QUE DESEJA EDITAR (" << inicioListagem+1 << " AO " << fimListagem+1 << "): ";
 	} else if(*acao ==2) {
@@ -340,7 +348,9 @@ int visualizarESelecionarCliente(int* acao) {
     cin.ignore();
     
     if (clienteEscolhido < 1 || clienteEscolhido > numRegistros) {
-        cout << endl << "CLIENTE INVALIDO!" << endl;
+        cout << endl << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------------ CLIENTE INVALIDO (Retornando ao menu...) --------------------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
         delete[] dadosBD;
         return -1;
     }
@@ -437,7 +447,9 @@ void editarDados(){
     // o -1 aqui é o retorno da função visualizarESelecionarCliente(), para qualquer erro presente nela.
 	// é usado para imprimir a mensagem que informa o usuário sobre cancelamento do procedimento.
 	if (indice == -1) { 
-        cout << endl << "OPERACAO DE EDICAO CANCELADA! RETORNANDO AO MENU PRINCIPAL." << endl;
+        cout << endl << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------------- EDICAO CANCELADA (Retornando ao menu...) -------------------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
         return;
     }
 
@@ -450,11 +462,11 @@ void editarDados(){
         return;
     }
 
-    cout << endl << "--------------------------> DADOS ATUAIS DO CLIENTE <---------------------------" << endl;
+    cout << endl << "---------------------------> DADOS ATUAIS DO CLIENTE <--------------------------" << endl;
     cout << "--------------------------------------------------------------------------------" << endl;
     dadosBD[indice].imprime();
     cout << "--------------------------------------------------------------------------------" << endl;
-    cout << endl << "QUAL CAMPO DESEJA EDITAR?" << endl;
+    cout << endl << "-------------------------> QUAL CAMPO DESEJA EDITAR? <--------------------------" << endl;
     cout << "1. NOME" << endl;
     cout << "2. IDADE" << endl;
     cout << "3. ESTADO CIVIL" << endl;
@@ -523,7 +535,9 @@ void editarDados(){
 			cout << "--------------------------------------------------------------------------------" << endl;
             break;
         default:
-            cout << endl << "OPCAO INVALIDA!" << endl;
+            cout << endl << "--------------------------------------------------------------------------------" << endl;
+            cout << "-------------------- OPCAO INVALIDA (Retornando ao menu...) --------------------" << endl;
+            cout << "--------------------------------------------------------------------------------" << endl << endl;
             delete[] dadosBD;
             return;
     }
@@ -566,7 +580,9 @@ void excluirDados() {
 	// o -1 aqui é o retorno da função visualizarESelecionarCliente(), para qualquer erro presente nela.
 	// é usado para imprimir a mensagem que informa o usuário sobre cancelamento do procedimento.
     if (indice == -1) {
-        cout << "OPERACAO DE EXCLUSAO CANCELADA! RETORNANDO AO MENU PRINCIPAL." << endl;
+        cout << endl << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------------ EXCLUSÃO CANCELADA (Retornando ao menu...) ------------------" << endl;
+        cout << "--------------------------------------------------------------------------------" << endl << endl;
         return;
     }
 
@@ -592,7 +608,9 @@ void excluirDados() {
     cin.ignore();
     
     if (confirmarExclusao != 1) {
-        cout << endl << "EXCLUSAO CANCELADA!" << endl << endl;
+        cout << endl << "--------------------------------------------------------------------------------" << endl;
+        cout << "------------------ EXCLUSÃO CANCELADA (Retornando ao menu...) -----------------" << endl;
+        cout << "-------------------------------------------------------------------------------" << endl << endl;
         delete[] dadosBD;
         return;
     }
@@ -616,7 +634,7 @@ void excluirDados() {
     }
     arquivoCSV.close();
     cout << endl <<  "--------------------------------------------------------------------------------" << endl;
-    cout << "-----------------------> CLIENTE EXCLUIDO COM SUCESSO! <------------------------" << endl;
+    cout << "----------------------> CLIENTE EXCLUIDO COM SUCESSO! <-------------------------" << endl;
     cout << "--------------------------------------------------------------------------------" << endl;
     delete[] dadosBD;
 }
@@ -624,17 +642,17 @@ void excluirDados() {
 void imprimirTodosDados(bd* dadosBD, int tamanho) {
     for (int i=0; i < tamanho; i++) {
         if(i < 99) {
-            cout << "CLIENTE " << i + 1 << ": =========================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ====================================================================" << endl;
             dadosBD[i].imprime();
         } else {
-            cout << "CLIENTE " << i + 1 << ": ========================================" << endl;
+            cout << "CLIENTE " << i + 1 << ": ===================================================================" << endl;
             dadosBD[i].imprime();
         }
     }
 }
 
 void menuSimples() {
-    cout << endl << "----------------- INSIRA O NUMERO DA OPCAO QUE DESEJA, ABAIXO. -----------------" << endl;
+    cout << endl << "---------------- INSIRA O NUMERO DA OPCAO QUE DESEJA, ABAIXO. ------------------" << endl;
     cout <<  "--------------------------------------------------------------------------------" << endl;
     cout << "1. EDITAR DADOS." << endl;
     cout << "2. ADICIONAR UM CLIENTE." << endl;
@@ -1023,6 +1041,7 @@ void todosOsDados() {
             case 3:
                 excluirDados();
             break;
+<<<<<<< HEAD
             
             case 4:
                 ordenarDados();
@@ -1031,10 +1050,18 @@ void todosOsDados() {
             case 5: 
                 cout << endl << "RETORNANDO AO MENU PRINCIPAL..." << endl;
                 sair=true;
+=======
+                
+            case 4: 
+                cout << endl << "-----------------------> RETORNANDO AO MENU PRINCIPAL... <----------------------" << endl;
+                continuarNaSecao = false;
+>>>>>>> 424ce3568ab0bc72947c6f4e80d4ca0ff726a2d8
             break;
                 
             default:
-                cout << endl << "OPCAO INVALIDA! TENTE NOVAMENTE." << endl << endl;
+                cout << "--------------------------------------------------------------------------------" << endl;
+                cout << "------------ ! ! ! !  OPCAO INVALIDA! TENTE NOVAMENTE. ! ! ! ! -----------------" << endl;
+                cout << "--------------------------------------------------------------------------------" << endl << endl;
             break;
         }
     }
@@ -1066,8 +1093,13 @@ bool sairDespedida() {
     cin >> acaoDespedida;
     
     if(acaoDespedida==1){
+<<<<<<< HEAD
         cout << endl << "--------------------------------------------------------------------------------" << endl;
         cout << "----------------- OBRIGADO POR USAR NOSSO SISTEMA, ATE BREVE! ------------------" << endl;
+=======
+        cout << "--------------------------------------------------------------------------------" << endl;
+        cout << "---------------- OBRIGADO POR USAR NOSSO SISTEMA, ATE BREVE! -------------------" << endl;
+>>>>>>> 424ce3568ab0bc72947c6f4e80d4ca0ff726a2d8
         cout << "--------------------------------------------------------------------------------" << endl;
         return true;
     } else if (acaoDespedida < 1 || acaoDespedida > 2){
@@ -1117,9 +1149,15 @@ int main() {
             break;
                 
             default:
+<<<<<<< HEAD
                 cout << endl <<  "--------------------------------------------------------------------------------" << endl;
                 cout << "---------------------- ESCOLHA INVALIDA! TENTE NOVAMENTE. ----------------------" << endl;
                 cout << "--------------------------------------------------------------------------------" << endl;
+=======
+                cout << "--------------------------------------------------------------------------------" << endl;
+                cout << "--------- OPCAO INVALIDA, SELECIONE UMA DAS OPCOES PRESENTES NO MENU. ----------" << endl;
+                cout << "--------------------------------------------------------------------------------" << endl << endl;
+>>>>>>> 424ce3568ab0bc72947c6f4e80d4ca0ff726a2d8
             break;
         }
     }
