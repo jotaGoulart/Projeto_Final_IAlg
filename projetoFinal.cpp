@@ -972,8 +972,8 @@ void buscarDados() {
     
     switch(opcaoBusca) {
         case 1: {
-            cout << endl << "PARA BUSCA BINARIA POR NOME, OS DADOS DEVEM ESTAR ORDENADOS." << endl;
-            cout << "DESEJA ORDENAR AUTOMATICAMENTE? 1. SIM (Recomendado) | 2. NAO" << endl;
+            cout << endl << "PARA BUSCA BINARIA POR NOME, OS DADOS DEVEM ESTAR ORDENADOS." << endl << endl;
+            cout << "DESEJA ORDENAR AUTOMATICAMENTE?" << endl << "1. SIM (Recomendado, se quiser continuar) | 2. NAO (Retornar ao menu principal)" << endl;
             cout << "ESCOLHA UMA OPCAO: ";
             int ordenar;
             cin >> ordenar;
@@ -1007,8 +1007,8 @@ void buscarDados() {
         break;
         }
         case 2: {
-            cout << endl << "PARA BUSCAR POR CIDADE, OS DADOS DEVEM ESTAR ORDENADOS." << endl;
-            cout << "DESEJA ORDENAR AUTOMATICAMENTE? 1. SIM (Recomendado) | 2. NAO" << endl;
+            cout << endl << "PARA BUSCA BINARIA POR CIDADE, OS DADOS DEVEM ESTAR ORDENADOS." << endl << endl;
+            cout << "DESEJA ORDENAR AUTOMATICAMENTE?" << endl << "1. SIM (Recomendado, se quiser continuar) | 2. NAO (Retornar ao menu principal)" << endl;
             cout << "ESCOLHA UMA OPCAO: ";
             int ordenar;
             cin >> ordenar;
