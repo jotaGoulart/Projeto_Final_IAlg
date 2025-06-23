@@ -157,9 +157,9 @@ bool validarTelefone(const char* telefone) {
         return false;
     }
     
-    // Verifica se o primeiro dígito do número é válido (deve ser 9 para celular ou 2-5 para fixo)
+    // Verifica se o primeiro dígito do número é válido (deve ser 9)
     char primeiroDigito= telefone[5];
-    if(primeiroDigito != '9' && (primeiroDigito < '2' || primeiroDigito > '5')) {
+    if(primeiroDigito != '9') {
         return false;
     }
     
@@ -889,6 +889,73 @@ void menuBusca() {
     cout << "ESCOLHA UMA OPCAO: ";
 }
 
+void csvParaBinario() {
+    int numRegistros=0, capacidade=0;
+    bd* dadosBD=captarDados(numRegistros, capacidade);
+    
+    if (dadosBD== nullptr || numRegistros== 0){
+        cout << "NENHUM DADO ENCONTRADO PARA CONVERTER!" << endl;
+        return;
+    }
+
+    cout << "--------------------------------------------------------------------------------" << endl;
+    cout << "DESEJA MESMO CONVERTER OS DADOS PARA UM ARQUIVO BINARIO?" << endl;
+    cout << "1. SIM. (Recomendado, para a seguranca de seus clientes.) | 2. NAO." << endl;
+    cout << "OS DADOS PRESENTES NO ARQUIVO CSV NAO SERAO PERDIDOS! APENAS COPIADOS." << endl;
+    cout << "--------------------------------------------------------------------------------" << endl;
+    cout << "ESCOLHA UMA OPCAO: ";
+
+    int opcaoConversao=0;
+    cin >> opcaoConversao;
+    switch (opcaoConversao){
+        case 1: 
+        {
+            ofstream arquivoBinario("dados.bin",ios::binary);
+            if (!arquivoBinario){
+                cout << endl << "ERRO AO CRIAR ARQUIVO BINARIO! TENTE NOVAMENTE." << endl;
+                    delete[] dadosBD;
+                return;
+            }
+
+            const char* cabecalho= "NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL";
+            int tamanhoCabecalho= strlen(cabecalho);
+            
+            arquivoBinario.write(reinterpret_cast<const char*>(&tamanhoCabecalho), sizeof(int));
+                arquivoBinario.write(cabecalho, tamanhoCabecalho);
+            arquivoBinario.write(reinterpret_cast<const char*>(&numRegistros), sizeof(int));
+            for (int i=0; i < numRegistros; i++){
+                arquivoBinario.write(dadosBD[i].nome, 100);
+                arquivoBinario.write(reinterpret_cast<const char*>(&dadosBD[i].idade), sizeof(int));
+                arquivoBinario.write(dadosBD[i].estadoCivil, 50);
+                arquivoBinario.write(dadosBD[i].cidade, 100);
+                arquivoBinario.write(dadosBD[i].finalidade, 100);
+                arquivoBinario.write(dadosBD[i].telefone, 50);
+                arquivoBinario.write(dadosBD[i].email, 50);
+            }
+            arquivoBinario.close();
+            delete[] dadosBD;
+            
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << "----------------> DADOS CONVERTIDOS PARA BINARIO COM SUCESSO! <-----------------" << endl;
+            cout << "-------------> ARQUIVO 'dados.bin' ATUALIZADO COM " << numRegistros << " REGISTROS. <--------------" << endl;
+            cout << "--------------------------------------------------------------------------------" << endl;
+        }
+        break;
+        case 2:
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << "OK! RETORNANDO AO MENU PRINCIPAL..." << endl;
+            delete[] dadosBD;
+        break;
+        default:
+            cout << endl << "OPCAO INVALIDA! TENTE NOVAMENTE, INSERINDO UMA DAS OPCOES ABAIXO!" << endl;
+            delete[] dadosBD;
+            cin.clear();
+            cin.ignore(1000, '\n');
+            csvParaBinario();
+        break;
+    }
+}
+
 // Função principal de busca
 void buscarDados() {
     int numRegistros=0, capacidade;
@@ -1053,7 +1120,8 @@ void menuPrincipal() {
     cout << "4. PARA EXCLUIR OS DADOS DE CLIENTES." << endl;
     cout << "5. PARA BUSCAR CLIENTES ESPECIFICOS." << endl;
     cout << "6. PARA ORDENAR DADOS. (Recomendado apos a insercao ou edicao de algum cliente.)" << endl;
-    cout << "7. PARA SAIR." << endl;
+    cout << "7. PARA CONVERTER DADOS PARA CRIPTOGRAFIA BINARIA." << endl;
+    cout << "8. PARA SAIR." << endl;
     cout <<  "--------------------------------------------------------------------------------" << endl;
     cout << "ESCOLHA UMA OPCAO: ";
 }
@@ -1113,6 +1181,9 @@ int main() {
                 ordenarDados();
             break;
             case 7:
+                csvParaBinario();
+            break;
+            case 8:
                 sair=sairDespedida();
             break;
                 
