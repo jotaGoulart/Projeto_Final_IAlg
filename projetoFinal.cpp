@@ -972,19 +972,14 @@ void buscarDados() {
     
     switch(opcaoBusca) {
         case 1: {
-            cout << endl << "PARA BUSCA BINARIA POR NOME, OS DADOS DEVEM ESTAR ORDENADOS." << endl << endl;
-            cout << "DESEJA ORDENAR AUTOMATICAMENTE?" << endl << "1. SIM (Recomendado, se quiser continuar) | 2. NAO (Retornar ao menu principal)" << endl;
-            cout << "ESCOLHA UMA OPCAO: ";
-            int ordenar;
-            cin >> ordenar;
-            cin.ignore();
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << endl << "PARA BUSCAR POR NOME, OS DADOS DEVEM ESTAR DEVIDAMENTE ORDENADOS." << endl;
+            cout << "OS DADOS ESTAO SENDO ORDENADOS AUTOMATICAMENTE POR NOME EM ORDEM ALFABETICA..." << endl;
             
-            if (ordenar== 1) {
-                shellSortPorNome(dadosBD, numRegistros);
-                cout << endl << "DADOS ORDENADOS POR NOME!" << endl;
-            }
-            
-            cout << endl << "DIGITE O NOME COMPLETO! PARA BUSCAR. (Exatamente como cadastrado): ";
+            shellSortPorNome(dadosBD, numRegistros);
+            cout << endl << "DADOS ORDENADOS POR NOME! (Não afeta o arquivo, é apenas momentaneo)" << endl;
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << endl << "DIGITE O NOME COMPLETO! PARA BUSCAR. (Exatamente como cadastrado): " << endl;
             char nomeBusca[100];
             cin.getline(nomeBusca, 100);
             
@@ -1007,19 +1002,14 @@ void buscarDados() {
         break;
         }
         case 2: {
-            cout << endl << "PARA BUSCA BINARIA POR CIDADE, OS DADOS DEVEM ESTAR ORDENADOS." << endl << endl;
-            cout << "DESEJA ORDENAR AUTOMATICAMENTE?" << endl << "1. SIM (Recomendado, se quiser continuar) | 2. NAO (Retornar ao menu principal)" << endl;
-            cout << "ESCOLHA UMA OPCAO: ";
-            int ordenar;
-            cin >> ordenar;
-            cin.ignore();
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << endl << "PARA BUSCAR POR CIDADE, OS DADOS DEVEM ESTAR DEVIDAMENTE ORDENADOS." << endl;
+            cout << "OS DADOS ESTAO SENDO ORDENADOS AUTOMATICAMENTE POR CIDADE EM ORDEM ALFABETICA..." << endl;
             
-            if (ordenar== 1) {
-                shellSortPorCidade(dadosBD, numRegistros);
-                cout << endl << "DADOS ORDENADOS POR CIDADE!" << endl;
-            }
-            
-            cout << endl << "DIGITE A CIDADE PARA BUSCAR (EXATAMENTE COMO CADASTRADA): ";
+            shellSortPorCidade(dadosBD, numRegistros);
+            cout << endl << "DADOS ORDENADOS POR CIDADE! (Não afeta o arquivo, é apenas momentaneo)" << endl;
+            cout << "--------------------------------------------------------------------------------" << endl;
+            cout << endl << "DIGITE A CIDADE PARA BUSCAR (Exatamente como cadastrada): " << endl;
             char cidadeBusca[100];
             cin.getline(cidadeBusca, 100);
             
@@ -1122,11 +1112,12 @@ void menuPrincipal() {
     cout << "6. PARA ORDENAR DADOS. (Recomendado apos a insercao ou edicao de algum cliente.)" << endl;
     cout << "7. PARA CONVERTER DADOS PARA CRIPTOGRAFIA BINARIA." << endl;
     cout << "8. PARA SAIR." << endl;
-    cout <<  "--------------------------------------------------------------------------------" << endl;
+    cout << "--------------------------------------------------------------------------------" << endl;
     cout << "ESCOLHA UMA OPCAO: ";
 }
 
 bool sairDespedida() {
+    cout << "--------------------------------------------------------------------------------" << endl;
     cout << endl << "DESEJA ENCERRAR O PROGRAMA?" << endl;
     cout << "1. SIM | 2. NAO (Retornara ao menu principal)." << endl << endl;
     cout << "ESCOLHA UMA OPCAO: ";
