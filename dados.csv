@@ -1,121 +1,120 @@
 NOME,IDADE,ESTADO CIVIL,CIDADE,FINALIDADE,TELEFONE,EMAIL
-119
-Igor Fernandes Rocha,27,Solteiro,Alfenas,Morar,(35) 99090-3344,igor.rocha@gmail.com
-Simone Vieira Santos,37,Casada,Alfenas,Montar um Negocio,(35) 98989-1122,simone.santos@hotmail.com
-Paula Regina Teles,29,Solteira,Anapolis,Morar,(62) 98484-7777,paula.teles@gmail.com
-Carolina Mendes Bastos,27,Solteira,Aracaju,Montar um Negocio,(79) 99191-8282,carol.bastos@gmail.com
+118
+Adriano Xavier Teixeira,36,Solteiro,Santa Luzia,Morar,(31) 99555-1122,adriano.teixeira@yahoo.com
 Alessandra Lopes Ferreira,40,Casada,Araxa,Morar,(34) 99546-8721,alessandra.ferreira@icloud.com
-Cristiano Matos Ventura,62,Casado,Araxa,Montar um Negocio,(34) 99221-8844,cristiano.ventura@icloud.com
-Katia Silveira Lopes,33,Solteira,Barbacena,Morar,(32) 98484-8899,katia.lopes@gmail.com
-Patricia Lucia Tavares,61,Viuva,Barbacena,Investir,(32) 99965-1515,patricia.tavares@gmail.com
-Lucas Andrade Ribeiro,35,Casado,Barbacena,Morar,(41) 98765-4321,lucas.ribeiro@gmail.com
-Aline Mendes Rocha,27,Solteira,Barbacena,Investir,(32) 99234-8877,aline.rocha@yahoo.com
-Pedro Henrique Muniz,36,Casado,Bauru,Montar um Negocio,(14) 99595-6666,pedro.muniz@live.com
-Thiago Almeida Sousa,42,Divorciado,Belo Horizonte,Montar um Negocio,(31) 98523-4567,thiago.sousa@yahoo.com
-Rodrigo Lima Silva,38,Casado,Belo Horizonte,Montar um Negocio,(31) 98765-4432,rodrigo.silva@hotmail.com
-Isadora Ribeiro Faria,30,Solteira,Belo Horizonte,Investir,(31) 98123-4567,isadora.faria@gmail.com
-Diego Martins Andrade,46,Casado,Belo Horizonte,Investir,(31) 99696-6677,diego.andrade@outlook.com
-Jorge Almeida Pinto,58,Casado,Betim,Investir,(31) 98765-9912,jorge.pinto@outlook.com
-Eduardo Assis Camargo,51,Viuvo,Blumenau,Morar,(47) 99898-3434,eduardo.camargo@gmail.com
-Elaine Moraes Bastos,42,Casada,Boa Vista,Morar,(95) 99876-7777,elaine.bastos@hotmail.com
-Rodrigo Nunes Carvalho,41,Casado,Brasilia,Investir,(61) 99666-4433,rodrigo.carvalho@outlook.com
-Renato Oliveira Cruz,38,Casado,Campinas,Morar,(19) 99456-7890,renato.cruz@icloud.com
-Rafael Vieira Dorneles,37,Casado,Campo Grande,Montar um Negocio,(67) 98181-7070,rafael.dorneles@icloud.com
-Cassio Martins Goulart,60,Solteiro,Carrancas,Investir,(35) 97878-4435,cassio.martins@gmail.com
-Bruno Vilela Gomes,40,Casado,Carrancas,Montar um Negocio,(35) 98136-3178,bruno.gomes@gmail.com
-Debora Rocha Galvao,26,Solteira,Caruaru,Montar um Negocio,(81) 98181-8888,debora.galvao@gmail.com
-Anderson Melo Cassio,30,Solteiro,Caxias do Sul,Investir,(54) 99090-9999,anderson.cassio@outlook.com
-Sergio Albuquerque Viana,46,Casado,Chapeco,Investir,(49) 99666-1111,sergio.viana@outlook.com
-Renan Figueiredo Costa,42,Casado,Contagem,Morar,(31) 98333-5566,renan.costa@icloud.com
-Luciano Pereira Nunes,48,Divorciado,Contagem,Investir,(31) 98654-3298,luciano.nunes@yahoo.com
-Beatriz Duarte Almeida,35,Casada,Contagem,Montar um Negocio,(31) 98987-1122,beatriz.almeida@live.com
-Paulo Henrique Sabino,39,Casado,Contagem,Morar,(31) 99555-0022,paulo.sabino@icloud.com
-Tatiane Lopes Antunes,32,Casada,Cuiaba,Investir,(65) 98383-9191,tatiane.antunes@yahoo.com
-Jessica Milena Duarte,31,Solteira,Diamantina,Investir,(38) 98444-9988,jessica.duarte@gmail.com
-Otavio Leal Monteiro,50,Casado,Divinopolis,Montar um Negocio,(37) 98787-2233,otavio.monteiro@hotmail.com
-Cristina Ribeiro Silva,39,Casada,Divinopolis,Investir,(37) 98484-6677,cristina.silva@icloud.com
-Tatiane Silva Teixeira,29,Solteira,Divinopolis,Morar,(37) 98888-2233,tatiane.teixeira@icloud.com
-Carla Teles Pimentel,31,Solteira,Divinopolis,Montar um Negocio,(37) 98484-5566,carla.pimentel@gmail.com
-Otavio Mendes Alvarenga,41,Casado,Divinopolis,Investir,(37) 99544-6767,otavio.alvarenga@icloud.com
-Felipe Castro Moreira,36,Casado,Florianopolis,Investir,(48) 99933-2211,felipe.moreira@hotmail.com
-Isabela Farias Nogueira,33,Casada,Fortaleza,Investir,(85) 98888-1234,isabela.nogueira@yahoo.com
-Bruno Xavier Arantes,39,Casado,Franca,Morar,(16) 98484-0000,bruno.arantes@gmail.com
-Andre Luiz Azevedo,40,Casado,Goiania,Morar,(62) 98123-3344,andre.azevedo@gmail.com
 Alex Mendes Pires,34,Casado,Governador Valadares,Montar um Negocio,(33) 98484-3311,alex.pires@live.com
-Ruan Ribeiro Castro,35,Solteiro,Ibirite,Morar,(31) 98145-8974,ruan.castro@hotmail.com
-Sergio Sacani Mendes,43,Solteiro,Ijaci,Morar,(35) 99888-5432,sergio.sacani@outlook.com
-Clarissa Neves Monteiro,43,Casada,Ipatinga,Montar um Negocio,(31) 98484-5577,clarissa.monteiro@yahoo.com
-Tiago Souza Paiva,39,Divorciado,Ipatinga,Investir,(31) 99555-3344,tiago.paiva@gmail.com
-Fernando Costa Moura,56,Casado,Itabira,Morar,(31) 99789-1122,fernando.moura@hotmail.com
-Hugo Miranda Figueiredo,47,Casado,Itabira,Investir,(31) 98777-1144,hugo.figueiredo@hotmail.com
-Glaucia Almeida Rocha,28,Solteira,Itabira,Investir,(31) 99112-7788,glaucia.rocha@yahoo.com
-Vanessa Campos Dornelles,32,Casada,Itajai,Montar um Negocio,(47) 98181-2323,vanessa.dornelles@yahoo.com
-Lilian Borges Ferreira,36,Solteira,Itauna,Montar um Negocio,(37) 98789-4343,lilian.ferreira@hotmail.com
+Alfredo Rocha de Paula,63,Casado,Pouso Alegre,Investir,(35) 98456-2233,alfredo.paula@gmail.com
+Aline Guimaraes Prado,33,Casada,Sete Lagoas,Morar,(31) 98111-0099,aline.prado@icloud.com
+Aline Mendes Rocha,27,Solteira,Barbacena,Investir,(32) 99234-8877,aline.rocha@yahoo.com
+Amanda Rocha Ferreira,30,Casada,Recife,Morar,(81) 99976-5432,amanda.ferreira@hotmail.com
+Anderson Melo Cassio,30,Solteiro,Caxias do Sul,Investir,(54) 99090-9999,anderson.cassio@outlook.com
+Andre Luiz Azevedo,40,Casado,Goiania,Morar,(62) 98123-3344,andre.azevedo@gmail.com
+Andreia Torres da Luz,67,Viuva,Passos,Morar,(35) 99789-5566,andreia.luz@outlook.com
+Angela Monteiro Lacerda,50,Casada,Pocos de Caldas,Montar um Negocio,(35) 98765-7788,angela.lacerda@outlook.com
+Beatriz Duarte Almeida,35,Casada,Contagem,Montar um Negocio,(31) 98987-1122,beatriz.almeida@live.com
+Beatriz Torres Machado,25,Solteira,Vila Velha,Investir,(27) 98654-1234,beatriz.machado@icloud.com
+Bianca Mendes Siqueira,27,Solteira,Pouso Alegre,Montar um Negocio,(35) 99321-4433,bianca.siqueira@gmail.com
+Bruna Cordeiro Silveira,30,Solteira,Ribeirao Preto,Morar,(16) 99797-6767,bruna.silveira@gmail.com
+Bruna Martins Fonseca,24,Solteira,Ouro Preto,Morar,(31) 98198-6677,bruna.fonseca@gmail.com
+Bruno Vilela Gomes,40,Casado,Carrancas,Montar um Negocio,(35) 98136-3178,bruno.gomes@gmail.com
+Bruno Xavier Arantes,39,Casado,Franca,Morar,(16) 98484-0000,bruno.arantes@gmail.com
 Camila Duarte Pinto,31,Casada,Joao Pessoa,Montar um Negocio,(83) 98234-5678,camila.pinto@outlook.com
-Daniela Moura Andrade,41,Casada,Juiz de Fora,Morar,(32) 98433-7788,daniela.andrade@outlook.com
-Erico Goncalves Barros,60,Casado,Juiz de Fora,Montar um Negocio,(32) 99666-7788,erico.barros@live.com
-Viviane Luz Ferreira,31,Solteira,Juiz de Fora,Morar,(32) 99888-4411,viviane.ferreira@gmail.com
+Carla Teles Pimentel,31,Solteira,Divinopolis,Montar um Negocio,(37) 98484-5566,carla.pimentel@gmail.com
 Carlos Augusto Teixeira,45,Casado,Lavras,Morar,(35) 98832-2132,carlos.teixeira@gmail.com
-Roberta Luz Santana,52,Casada,Lavras,Investir,(35) 99888-4455,roberta.santana@hotmail.com
-Milena Tavares Rocha,33,Casada,Lavras,Montar um Negocio,(35) 98231-7890,milena.rocha@live.com
-Elaine Cecilia Gatto,28,Solteira,Lavras,Investir,(14) 99740-4040,elaine.gatto@ufla.br
+Carlos Eduardo Martins,50,Viuvo,Sao Paulo,Investir,(11) 99614-3210,carlos.martins@live.com
+Carolina Mendes Bastos,27,Solteira,Aracaju,Montar um Negocio,(79) 99191-8282,carol.bastos@gmail.com
+Cassio Martins Goulart,60,Solteiro,Carrancas,Investir,(35) 97878-4435,cassio.martins@gmail.com
+Cesar Augusto Pimentel,57,Casado,Montes Claros,Morar,(38) 99888-8989,cesar.pimentel@live.com
+Clarissa Neves Monteiro,43,Casada,Ipatinga,Montar um Negocio,(31) 98484-5577,clarissa.monteiro@yahoo.com
+Claudio Balbino Alfaggi,79,Viuvo,Nova Lima,Investir,(31) 74827-4294,acessoria.alfaggi@icloud.com
 Constantino Almeida Carvalho,58,Casado,Lavras,Montar um Negocio,(35) 97878-9898,constantino.carvalho@hotmail.com
+Cristiano Matos Ventura,62,Casado,Araxa,Montar um Negocio,(34) 99221-8844,cristiano.ventura@icloud.com
+Cristina Ribeiro Silva,39,Casada,Divinopolis,Investir,(37) 98484-6677,cristina.silva@icloud.com
+Daniela Moura Andrade,41,Casada,Juiz de Fora,Morar,(32) 98433-7788,daniela.andrade@outlook.com
+Debora Rocha Galvao,26,Solteira,Caruaru,Montar um Negocio,(81) 98181-8888,debora.galvao@gmail.com
+Denise Rocha Lima,40,Casada,Montes Claros,Investir,(38) 99099-7755,denise.lima@hotmail.com
+Diego Martins Andrade,46,Casado,Belo Horizonte,Investir,(31) 99696-6677,diego.andrade@outlook.com
+Edgar Martins Leite,52,Casado,Patos de Minas,Montar um Negocio,(34) 98777-6655,edgar.leite@outlook.com
+Edson Brito Machado,61,Viuvo,Uberaba,Investir,(34) 99878-6643,edson.machado@outlook.com
+Eduardo Assis Camargo,51,Viuvo,Blumenau,Morar,(47) 99898-3434,eduardo.camargo@gmail.com
+Elaine Diniz Barbosa,43,Casada,Santa Luzia,Investir,(31) 99009-1233,elaine.barbosa@yahoo.com
+Elaine Moraes Bastos,42,Casada,Boa Vista,Morar,(95) 99876-7777,elaine.bastos@hotmail.com
+Erico Goncalves Barros,60,Casado,Juiz de Fora,Montar um Negocio,(32) 99666-7788,erico.barros@live.com
+Fabio Lima Bastos,45,Divorciado,Pocos de Caldas,Investir,(35) 99665-4433,fabio.bastos@yahoo.com
+Felipe Castro Moreira,36,Casado,Florianopolis,Investir,(48) 99933-2211,felipe.moreira@hotmail.com
+Fernanda Costa Lemos,28,Solteira,Porto Alegre,Investir,(51) 99832-1234,fernanda.lemos@outlook.com
+Fernando Costa Moura,56,Casado,Itabira,Morar,(31) 99789-1122,fernando.moura@hotmail.com
+Glaucia Almeida Rocha,28,Solteira,Itabira,Investir,(31) 99112-7788,glaucia.rocha@yahoo.com
+Guilherme Lopes Tavares,45,Casado,Uberaba,Investir,(34) 99777-6655,guilherme.tavares@outlook.com
+Gustavo Pacheco Almeida,44,Casado,Uberlandia,Investir,(34) 98494-5656,gustavo.almeida@hotmail.com
+Helena Dias Coelho,49,Casada,Varginha,Investir,(35) 99555-7788,helena.coelho@yahoo.com
+Hugo Miranda Figueiredo,47,Casado,Itabira,Investir,(31) 98777-1144,hugo.figueiredo@hotmail.com
+Igor Fernandes Rocha,27,Solteiro,Alfenas,Morar,(35) 99090-3344,igor.rocha@gmail.com
+Isabela Farias Nogueira,33,Casada,Fortaleza,Investir,(85) 98888-1234,isabela.nogueira@yahoo.com
+Isadora Ribeiro Faria,30,Solteira,Belo Horizonte,Investir,(31) 98123-4567,isadora.faria@gmail.com
+Jefferson Assis Ramos,44,Casado,Uberlandia,Morar,(34) 99333-4444,jefferson.ramos@yahoo.com
+Jessica Milena Duarte,31,Solteira,Diamantina,Investir,(38) 98444-9988,jessica.duarte@gmail.com
+Joao Paulo Loureiro,50,Casado,Sao Bernardo do Campo,Morar,(11) 98585-4444,joao.loureiro@yahoo.com
+Jorge Almeida Pinto,58,Casado,Betim,Investir,(31) 98765-9912,jorge.pinto@outlook.com
+Juliana Monteiro Silva,26,Solteira,Rio de Janeiro,Montar um Negocio,(21) 99745-2109,juliana.silva@gmail.com
+Juliana Nunes Martins,32,Solteira,Uberlandia,Morar,(34) 99123-4567,juliana.martins@outlook.com
+Julio Fernandes Camargo,38,Solteiro,Sete Lagoas,Investir,(31) 98666-8899,julio.camargo@live.com
+Katia Silveira Lopes,33,Solteira,Barbacena,Morar,(32) 98484-8899,katia.lopes@gmail.com
+Larissa Barros Tavares,34,Casada,Maceio,Morar,(82) 98777-2212,larissa.tavares@hotmail.com
+Larissa Gomes Farias,29,Solteira,Uberaba,Morar,(34) 99090-6677,larissa.farias@outlook.com
 Leandro Costa Azevedo,44,Casado,Lavras,Investir,(35) 99876-1123,leandro.azevedo@gmail.com
 Leonardo Brito Rezende,29,Solteiro,Londrina,Montar um Negocio,(43) 98686-1212,leonardo.rezende@live.com
-Marcos Antonio Freitas,32,Divorciado,Luminarias,Morar,(35) 98373-5258,marcos.freitas@yahoo.com
+Leticia Nogueira Lopes,28,Solteira,Sao Joao del-Rei,Montar um Negocio,(32) 99112-3344,leticia.lopes@yahoo.com
+Lilian Borges Ferreira,36,Solteira,Itauna,Montar um Negocio,(37) 98789-4343,lilian.ferreira@hotmail.com
+Lucas Andrade Ribeiro,35,Casado,Barbacena,Morar,(41) 98765-4321,lucas.ribeiro@gmail.com
 Luciana Pereira Diniz,27,Solteira,Macapa,Investir,(96) 98282-5555,luciana.diniz@yahoo.com
-Larissa Barros Tavares,34,Casada,Maceio,Morar,(82) 98777-2212,larissa.tavares@hotmail.com
-Marcos Aurelio Mendes,38,Divorciado,Maringa,Montar um Negocio,(44) 99292-3333,marcos.mendes@hotmail.com
-Denise Rocha Lima,40,Casada,Montes Claros,Investir,(38) 99099-7755,denise.lima@hotmail.com
-Cesar Augusto Pimentel,57,Casado,Montes Claros,Morar,(38) 99888-8989,cesar.pimentel@live.com
-Vilma Pereira Guimaraes,73,Divorciada,Montes Claros,Morar,(35) 94332-5636,vilma.pereira@outlook.com
-Patricia Lima Correa,29,Solteira,Natal,Morar,(84) 99555-8765,patricia.correa@gmail.com
-Natalia Simoes Leal,28,Solteira,Niteroi,Montar um Negocio,(21) 98585-4545,natalia.leal@outlook.com
-Claudio Balbino Alfaggi,79,Viuvo,Nova Lima,Investir,(31) 74827-4294,acessoria.alfaggi@icloud.com
-Bruna Martins Fonseca,24,Solteira,Ouro Preto,Morar,(31) 98198-6677,bruna.fonseca@gmail.com
-Andreia Torres da Luz,67,Viuva,Passos,Morar,(35) 99789-5566,andreia.luz@outlook.com
-Silvia Campos de Lima,30,Solteira,Patos de Minas,Morar,(34) 99123-1122,silvia.lima@yahoo.com
-Edgar Martins Leite,52,Casado,Patos de Minas,Montar um Negocio,(34) 98777-6655,edgar.leite@outlook.com
-Ricardo Cunha Peixoto,48,Divorciado,Pelotas,Investir,(53) 99777-8888,ricardo.peixoto@hotmail.com
-Fabio Lima Bastos,45,Divorciado,Pocos de Caldas,Investir,(35) 99665-4433,fabio.bastos@yahoo.com
-Angela Monteiro Lacerda,50,Casada,Pocos de Caldas,Montar um Negocio,(35) 98765-7788,angela.lacerda@outlook.com
-Fernanda Costa Lemos,28,Solteira,Porto Alegre,Investir,(51) 99832-1234,fernanda.lemos@outlook.com
-Bianca Mendes Siqueira,27,Solteira,Pouso Alegre,Montar um Negocio,(35) 99321-4433,bianca.siqueira@gmail.com
-Sandra Rocha Gomes,53,Casada,Pouso Alegre,Montar um Negocio,(35) 98654-8899,sandra.gomes@hotmail.com
-Alfredo Rocha de Paula,63,Casado,Pouso Alegre,Investir,(35) 98456-2233,alfredo.paula@gmail.com
-Amanda Rocha Ferreira,30,Casada,Recife,Morar,(81) 99976-5432,amanda.ferreira@hotmail.com
-Bruna Cordeiro Silveira,30,Solteira,Ribeirao Preto,Morar,(16) 99797-6767,bruna.silveira@gmail.com
-Rogerio Leal Borges,49,Divorciado,Ribeirao das Neves,Montar um Negocio,(31) 98787-4455,rogerio.borges@yahoo.com
-Vinicius Vieira Borges,23,Solteiro,Rio de Janeiro,Investir,(21) 97362-5721,vinicius.borges@gmail.com
-Juliana Monteiro Silva,26,Solteira,Rio de Janeiro,Montar um Negocio,(21) 99745-2109,juliana.silva@gmail.com
+Luciano Pereira Nunes,48,Divorciado,Contagem,Investir,(31) 98654-3298,luciano.nunes@yahoo.com
 Marcelo Teixeira Braga,47,Divorciado,Salvador,Montar um Negocio,(71) 99777-4321,marcelo.braga@outlook.com
 Marcio Souza Carvalho,53,Casado,Santa Luzia,Investir,(31) 98844-5566,marcio.carvalho@gmail.com
-Adriano Xavier Teixeira,36,Solteiro,Santa Luzia,Morar,(31) 99555-1122,adriano.teixeira@yahoo.com
-Elaine Diniz Barbosa,43,Casada,Santa Luzia,Investir,(31) 99009-1233,elaine.barbosa@yahoo.com
-Mariana Freitas Barreto,35,Casada,Santos,Investir,(13) 99292-2323,mariana.barreto@yahoo.com
-Joao Paulo Loureiro,50,Casado,Sao Bernardo do Campo,Morar,(11) 98585-4444,joao.loureiro@yahoo.com
-Leticia Nogueira Lopes,28,Solteira,Sao Joao del-Rei,Montar um Negocio,(32) 99112-3344,leticia.lopes@yahoo.com
-Tatiana Rangel Siqueira,31,Casada,Sao Jose dos Campos,Montar um Negocio,(12) 99333-1111,tatiana.siqueira@outlook.com
-Vitor Machado Almeida,34,Casado,Sao Paulo,Montar um Negocio,(11) 98512-3344,vitor.almeida@outlook.com
-Carlos Eduardo Martins,50,Viuvo,Sao Paulo,Investir,(11) 99614-3210,carlos.martins@live.com
+Marcos Antonio Freitas,32,Divorciado,Luminarias,Morar,(35) 98373-5258,marcos.freitas@yahoo.com
+Marcos Aurelio Mendes,38,Divorciado,Maringa,Montar um Negocio,(44) 99292-3333,marcos.mendes@hotmail.com
 Marcos Souza Ribeiro,47,Casado,Sete Lagoas,Investir,(31) 98444-7788,marcos.ribeiro@gmail.com
-Mauricio Camargo Brito,51,Casado,Sete Lagoas,Montar um Negocio,(31) 99666-7788,mauricio.brito@gmail.com
-Aline Guimaraes Prado,33,Casada,Sete Lagoas,Morar,(31) 98111-0099,aline.prado@icloud.com
-Julio Fernandes Camargo,38,Solteiro,Sete Lagoas,Investir,(31) 98666-8899,julio.camargo@live.com
-Rafael Camargo Oliveira,53,Divorciado,Teofilo Otoni,Morar,(33) 99678-3344,rafael.oliveira@icloud.com
+Mariana Freitas Barreto,35,Casada,Santos,Investir,(13) 99292-2323,mariana.barreto@yahoo.com
 Marta Neves Alencar,36,Casada,Teofilo Otoni,Morar,(33) 99888-1122,marta.alencar@icloud.com
+Mauricio Camargo Brito,51,Casado,Sete Lagoas,Montar um Negocio,(31) 99666-7788,mauricio.brito@gmail.com
+Milena Tavares Rocha,33,Casada,Lavras,Montar um Negocio,(35) 98231-7890,milena.rocha@live.com
 Murilo Costa Sales,55,Divorciado,Teofilo Otoni,Morar,(33) 98333-1188,murilo.sales@hotmail.com
-Vinicius Ramos Queiroz,45,Divorciado,Teresina,Morar,(86) 98484-3333,vinicius.queiroz@live.com
-Edson Brito Machado,61,Viuvo,Uberaba,Investir,(34) 99878-6643,edson.machado@outlook.com
-Larissa Gomes Farias,29,Solteira,Uberaba,Morar,(34) 99090-6677,larissa.farias@outlook.com
-Guilherme Lopes Tavares,45,Casado,Uberaba,Investir,(34) 99777-6655,guilherme.tavares@outlook.com
-Veronica Lemos Andrade,22,Solteira,Uberaba,Montar um Negocio,(34) 98777-9911,veronica.andrade@outlook.com
-Juliana Nunes Martins,32,Solteira,Uberlandia,Morar,(34) 99123-4567,juliana.martins@outlook.com
-Gustavo Pacheco Almeida,44,Casado,Uberlandia,Investir,(34) 98494-5656,gustavo.almeida@hotmail.com
-Rita Oliveira Duarte,37,Solteira,Uberlandia,Montar um Negocio,(34) 99778-6655,rita.duarte@hotmail.com
-Jefferson Assis Ramos,44,Casado,Uberlandia,Morar,(34) 99333-4444,jefferson.ramos@yahoo.com
-Sandro Duarte Souza,55,Casado,Varginha,Morar,(35) 99777-9988,sandro.souza@outlook.com
-Vanessa Teixeira Machado,42,Casada,Varginha,Investir,(35) 99333-8899,vanessa.machado@yahoo.com
-Helena Dias Coelho,49,Casada,Varginha,Investir,(35) 99555-7788,helena.coelho@yahoo.com
-Beatriz Torres Machado,25,Solteira,Vila Velha,Investir,(27) 98654-1234,beatriz.machado@icloud.com
+Natalia Simoes Leal,28,Solteira,Niteroi,Montar um Negocio,(21) 98585-4545,natalia.leal@outlook.com
+Otavio Leal Monteiro,50,Casado,Divinopolis,Montar um Negocio,(37) 98787-2233,otavio.monteiro@hotmail.com
+Otavio Mendes Alvarenga,41,Casado,Divinopolis,Investir,(37) 99544-6767,otavio.alvarenga@icloud.com
+Patricia Lima Correa,29,Solteira,Natal,Morar,(84) 99555-8765,patricia.correa@gmail.com
+Patricia Lucia Tavares,61,Viuva,Barbacena,Investir,(32) 99965-1515,patricia.tavares@gmail.com
+Paula Regina Teles,29,Solteira,Anapolis,Morar,(62) 98484-7777,paula.teles@gmail.com
+Paulo Henrique Sabino,39,Casado,Contagem,Morar,(31) 99555-0022,paulo.sabino@icloud.com
+Pedro Henrique Muniz,36,Casado,Bauru,Montar um Negocio,(14) 99595-6666,pedro.muniz@live.com
+Rafael Camargo Oliveira,53,Divorciado,Teofilo Otoni,Morar,(33) 99678-3344,rafael.oliveira@icloud.com
+Rafael Vieira Dorneles,37,Casado,Campo Grande,Montar um Negocio,(67) 98181-7070,rafael.dorneles@icloud.com
+Renan Figueiredo Costa,42,Casado,Contagem,Morar,(31) 98333-5566,renan.costa@icloud.com
 Renata Nobrega Bezerra,34,Casada,Vitoria,Investir,(27) 98787-2222,renata.bezerra@icloud.com
+Renato Oliveira Cruz,38,Casado,Campinas,Morar,(19) 99456-7890,renato.cruz@icloud.com
+Ricardo Cunha Peixoto,48,Divorciado,Pelotas,Investir,(53) 99777-8888,ricardo.peixoto@hotmail.com
+Rita Oliveira Duarte,37,Solteira,Uberlandia,Montar um Negocio,(34) 99778-6655,rita.duarte@hotmail.com
+Roberta Luz Santana,52,Casada,Lavras,Investir,(35) 99888-4455,roberta.santana@hotmail.com
+Rodrigo Lima Silva,38,Casado,Belo Horizonte,Montar um Negocio,(31) 98765-4432,rodrigo.silva@hotmail.com
+Rodrigo Nunes Carvalho,41,Casado,Brasilia,Investir,(61) 99666-4433,rodrigo.carvalho@outlook.com
+Rogerio Leal Borges,49,Divorciado,Ribeirao das Neves,Montar um Negocio,(31) 98787-4455,rogerio.borges@yahoo.com
+Ruan Ribeiro Castro,35,Solteiro,Ibirite,Morar,(31) 98145-8974,ruan.castro@hotmail.com
+Sandra Rocha Gomes,53,Casada,Pouso Alegre,Montar um Negocio,(35) 98654-8899,sandra.gomes@hotmail.com
+Sandro Duarte Souza,55,Casado,Varginha,Morar,(35) 99777-9988,sandro.souza@outlook.com
+Sergio Albuquerque Viana,46,Casado,Chapeco,Investir,(49) 99666-1111,sergio.viana@outlook.com
+Sergio Sacani Mendes,43,Solteiro,Ijaci,Morar,(35) 99888-5432,sergio.sacani@outlook.com
+Silvia Campos de Lima,30,Solteira,Patos de Minas,Morar,(34) 99123-1122,silvia.lima@yahoo.com
+Simone Vieira Santos,37,Casada,Alfenas,Montar um Negocio,(35) 98989-1122,simone.santos@hotmail.com
+Tatiana Rangel Siqueira,31,Casada,Sao Jose dos Campos,Montar um Negocio,(12) 99333-1111,tatiana.siqueira@outlook.com
+Tatiane Lopes Antunes,32,Casada,Cuiaba,Investir,(65) 98383-9191,tatiane.antunes@yahoo.com
+Tatiane Silva Teixeira,29,Solteira,Divinopolis,Morar,(37) 98888-2233,tatiane.teixeira@icloud.com
+Thiago Almeida Sousa,42,Divorciado,Belo Horizonte,Montar um Negocio,(31) 98523-4567,thiago.sousa@yahoo.com
+Tiago Souza Paiva,39,Divorciado,Ipatinga,Investir,(31) 99555-3344,tiago.paiva@gmail.com
+Vanessa Campos Dornelles,32,Casada,Itajai,Montar um Negocio,(47) 98181-2323,vanessa.dornelles@yahoo.com
+Vanessa Teixeira Machado,42,Casada,Varginha,Investir,(35) 99333-8899,vanessa.machado@yahoo.com
+Veronica Lemos Andrade,22,Solteira,Uberaba,Montar um Negocio,(34) 98777-9911,veronica.andrade@outlook.com
+Vilma Pereira Guimaraes,73,Divorciada,Montes Claros,Morar,(35) 94332-5636,vilma.pereira@outlook.com
+Vinicius Ramos Queiroz,45,Divorciado,Teresina,Morar,(86) 98484-3333,vinicius.queiroz@live.com
+Vinicius Vieira Borges,23,Solteiro,Rio de Janeiro,Investir,(21) 97362-5721,vinicius.borges@gmail.com
+Vitor Machado Almeida,34,Casado,Sao Paulo,Montar um Negocio,(11) 98512-3344,vitor.almeida@outlook.com
+Viviane Luz Ferreira,31,Solteira,Juiz de Fora,Morar,(32) 99888-4411,viviane.ferreira@gmail.com
