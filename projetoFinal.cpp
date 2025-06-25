@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstring>
+#include <cstring> // Apenas usada para strlen nas validações e strcmp nas buscas binárias.
 
 using namespace std;
 
@@ -141,7 +141,7 @@ bool validarTelefone(const char* telefone) {
     }
     
     // Posições 11-14: devem ser dígitos (último bloco do número).
-    for (int i=11; i <= 14; i++) {
+    for (int i=11; i<= 14; i++) {
         if (telefone[i] < '0' || telefone[i] > '9') {
             return false;
         }
@@ -218,7 +218,7 @@ void lerTelefoneComValidacao(char* telefone) {
     while (!telefoneValido) {
         cin.getline(telefone, 50);
         if(validarTelefone(telefone)) {
-            telefoneValido = true;
+            telefoneValido= true;
         }else {
             cout << "--------------------------------------------------------------------------------" << endl;
             cout << "TELEFONE INVALIDO! DIGITE UM TELEFONE VALIDO (formato: (xx) xxxxx-xxxx): " << endl;
@@ -254,14 +254,14 @@ bd* captarDados(int& tamanho, int& capacidade) {
         if (tamanho >= capacidade) {
             int acrescimo=10;
             int novaCapacidade= capacidade+acrescimo;
-            bd* novoBD = new bd[novaCapacidade];
+            bd* novoBD= new bd[novaCapacidade];
 
             for (int j=0; j < tamanho; j++) {
                 novoBD[j] = dadosBD[j];
             }
             delete[] dadosBD;
-            dadosBD = novoBD;
-            capacidade = novaCapacidade;
+            dadosBD= novoBD;
+            capacidade= novaCapacidade;
         }
 
         arquivoCSV.getline(dados.nome, 100, ',');
@@ -462,7 +462,7 @@ void editarDados(){
     int numRegistros=0, capacidade=0;
     bd* dadosBD= captarDados(numRegistros, capacidade);
     
-    if(dadosBD ==nullptr || numRegistros == 0 || indice >= numRegistros){
+    if(dadosBD== nullptr || numRegistros == 0 || indice >= numRegistros){
         cout << "ERRO AO CARREGAR DADOS PARA EDICAO!" << endl;
         if(dadosBD !=nullptr) delete[] dadosBD;
         return;
@@ -551,12 +551,12 @@ void editarDados(){
     arquivoCSV << numRegistros << endl;
     for (int i=0; i < numRegistros; i++) {
         arquivoCSV << dadosBD[i].nome << "," 
-                   << dadosBD[i].idade << "," 
-                   << dadosBD[i].estadoCivil << "," 
-                   << dadosBD[i].cidade << "," 
-                   << dadosBD[i].finalidade << "," 
-                   << dadosBD[i].telefone << "," 
-                   << dadosBD[i].email << endl;
+        << dadosBD[i].idade << "," 
+        << dadosBD[i].estadoCivil << "," 
+        << dadosBD[i].cidade << "," 
+        << dadosBD[i].finalidade << "," 
+        << dadosBD[i].telefone << "," 
+        << dadosBD[i].email << endl;
     }
     arquivoCSV.close();
     
@@ -625,12 +625,12 @@ void excluirDados() {
     arquivoCSV << numRegistros << endl;
     for (int i=0; i < numRegistros; i++) {
         arquivoCSV << dadosBD[i].nome << "," 
-                   << dadosBD[i].idade << "," 
-                   << dadosBD[i].estadoCivil << "," 
-                   << dadosBD[i].cidade << "," 
-                   << dadosBD[i].finalidade << "," 
-                   << dadosBD[i].telefone << "," 
-                   << dadosBD[i].email << endl;
+        << dadosBD[i].idade << "," 
+        << dadosBD[i].estadoCivil << "," 
+        << dadosBD[i].cidade << "," 
+        << dadosBD[i].finalidade << "," 
+        << dadosBD[i].telefone << "," 
+        << dadosBD[i].email << endl;
     }
     arquivoCSV.close();
     cout << endl <<  "--------------------------------------------------------------------------------" << endl;
@@ -641,7 +641,7 @@ void excluirDados() {
 
 void imprimirTodosDados(bd* dadosBD, int tamanho) {
     for (int i=0; i < tamanho; i++) {
-        // O if abaixo, é utilizado apenas para manter a interface concisa.
+        // O if abaixo, é utilizado apenas para manter a interface concisa e padronizada.
         if(i < 99) {
             cout << "CLIENTE " << i + 1 << ": =========================================" << endl;
             dadosBD[i].imprime();
@@ -928,7 +928,7 @@ void csvParaBinario() {
             int tamanhoCabecalho= strlen(cabecalho);
             
             // Preferimos por escrever no arquivo binário, da maneira campo-a-campo.
-            // Pois, primeiramente o código escrevia os dados considerando-os linhas,
+            // Pois, primeiramente escrevia os dados considerando-os linhas, mesmo com vetores de char,
             // mas após testes com a reescrita do arquivo binário, percebemos que
             // o arquivo não respondia corretamente as informações que haviam sido inseridas.
             // Portanto, optamos por esse modo de escrita no .bin, que gerou resultados positivos.
@@ -995,7 +995,7 @@ void buscarDados() {
             
             int indices[1000];
             int quantEncontrados=0;
-            buscarTodosComNome(dadosBD, numRegistros, nomeBusca, indices, quantEncontrados);
+            buscarTodosComNome(dadosBD, numRegistros, nomeBusca,indices,quantEncontrados);
             
             if (quantEncontrados > 0) {
                 cout << endl << "ENCONTRADOS " << quantEncontrados << " CLIENTE(S) COM NOME '" << nomeBusca << "':" << endl;
@@ -1024,7 +1024,7 @@ void buscarDados() {
             
             int indices[1000];
             int quantEncontrados=0;
-            buscarTodosComCidade(dadosBD, numRegistros, cidadeBusca, indices, quantEncontrados);
+            buscarTodosComCidade(dadosBD, numRegistros, cidadeBusca, indices,quantEncontrados);
             
             if(quantEncontrados > 0) {
                 cout << endl << "ENCONTRADOS " << quantEncontrados << " CLIENTE(S) NA CIDADE '" << cidadeBusca << "':" << endl;
