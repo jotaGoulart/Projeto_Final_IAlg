@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstring> // Apenas usada para strlen nas validações e strcmp nas buscas binárias.
+#include <cstring> // Apenas usada para strlen nas validações, e strcmp nas buscas binárias.
 
 using namespace std;
 
@@ -971,6 +971,7 @@ void csvParaBinario() {
 void buscarDados() {
     int numRegistros=0, capacidade=0;
     bd* dadosBD= captarDados(numRegistros, capacidade);
+    
     if(dadosBD== nullptr || numRegistros== 0) {
         cout << "NENHUM DADO ENCONTRADO PARA BUSCAR!" << endl;
         return;
