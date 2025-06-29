@@ -68,7 +68,6 @@ bool validarEmail(const char* email) {
             if(i == tamanho-1) {
                 return false;
             }
-            break;
         }
     }
     
